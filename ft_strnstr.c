@@ -6,17 +6,21 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 08:26:00 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/13 21:58:55 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/16 16:14:27 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
 
+	if(!haystack && len == 0)
+		return (NULL);
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	i = 0;
@@ -32,4 +36,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	return (0);
+}
+
+int main()
+{
+	printf("%s\n", ft_strnstr(NULL, "NULL", 0));
 }

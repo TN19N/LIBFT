@@ -6,7 +6,7 @@
 /*   By: mannouao <mannouao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 12:19:47 by mannouao          #+#    #+#             */
-/*   Updated: 2021/11/13 18:36:57 by mannouao         ###   ########.fr       */
+/*   Updated: 2021/11/18 14:37:09 by mannouao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ void	*ft_calloc(size_t count, size_t size)
 	else
 		return (NULL);
 }
+
