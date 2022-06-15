@@ -37,8 +37,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-int main()
-{
-	printf("%s\n", ft_strnstr(NULL, "NULL", 0));
-}
